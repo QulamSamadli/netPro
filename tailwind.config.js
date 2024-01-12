@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         headertop: 'url("../headerTop.png")',
         homeslider: 'url("../homeSlider.png")',
+        homeAbout: 'url("../homeAbout.png")',
       },
      
         screens: { 
