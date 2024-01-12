@@ -1,0 +1,30 @@
+import React from 'react'
+import { FaWhatsapp } from 'react-icons/fa'
+import { CiLocationOn } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { RiFacebookBoxLine } from "react-icons/ri";
+import { CiLinkedin } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+
+
+const HeaderTop = () => {
+  return (
+    <div className='m-0 p-0 container flex gap-20 justify-center items-center bg-headertop h-[64px] text-[white]' >
+        <p className='flex items-center'> <CiLocationOn /> Fəzail Bayramov küç., 1156, Xətai ray., Bakı, Azərbaycan, AZ1025</p>
+     <div className="flex gap-3 ">
+     <div className='flex w-fit items-center'><FaWhatsapp />  +99450 5754080</div>
+        <div>+99450 5754070</div>
+     </div>
+        <p className='flex  items-center'><CiMail />info@netprogroup.az</p>
+        <div className='flex'>
+            <div><RiFacebookBoxLine /></div>
+            <div><CiLinkedin /></div>
+            <div><CiInstagram /></div>
+            <div><FaWhatsapp /> </div>
+        </div>
+        <p>Az</p>
+    </div>
+  )
+}
+
+export default HeaderTop
