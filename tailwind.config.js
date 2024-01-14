@@ -7,6 +7,7 @@ export default {
         headertop: 'url("../headerTop.png")',
         homeslider: 'url("../homeSlider.png")',
         homeAbout: 'url("../homeAbout.png")',
+        swiperBg2: 'url("../swiperBg2.png")',
       },
 
       screens: {

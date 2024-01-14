@@ -6,6 +6,7 @@ import "swiper/css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { NavLink } from "react-router-dom";
 import Button from "../../Components/common/Button";
+import SecondSwiper from "../../Components/secondSwiper";
 const Home = () => {
   return (
     <>
@@ -70,6 +71,7 @@ const Home = () => {
           <img src="./guardanPartnyor.png" alt="" />
         </div>
       </div>
+   <SecondSwiper/>
     </>
   );
 };
