@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import Button from "../../Components/common/Button";
 import SecondSwiper from "../../Components/secondSwiper";
 import ServicesCard from "../../Components/common/ServicesCard";
+import ThirdSwiper from "../../Components/ThirdSwiper";
 const Home = () => {
   return (
     <>
@@ -34,7 +35,7 @@ const Home = () => {
               Avadanlıqların Quraşdırılması və Konfiqurasiyası
             </p>
 
-            <Button title="Daha Ətraflı" to="/products" darkMode arrow />
+            <Button title="Daha Ətraflı" to="/products" darkMode  />
           </div>
         </SwiperSlide>
       </Swiper>
@@ -74,6 +75,7 @@ const Home = () => {
       </div>
    <SecondSwiper/>
    <ServicesCard/>
+   <ThirdSwiper/>
     </>
   );
 };
