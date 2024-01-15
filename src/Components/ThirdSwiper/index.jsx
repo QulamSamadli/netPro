@@ -31,13 +31,13 @@ const ThirdSwiper = () => {
           className="mySwiper h-[490px]"
         >
           <SwiperSlide className="bg-white " >
-            <img className="object-contain" src="./swiperVertiv3.png" />
+            <img className="p-6" src="./swiperVertiv3.png" />
           </SwiperSlide>
           <SwiperSlide className="bg-white ">
-            <img className="object-contain" src="./swiperMakelsan3.png" />
+            <img className=" p-6" src="./swiperMakelsan3.png" />
           </SwiperSlide>
           <SwiperSlide className="bg-white ">
-            <img className="object-contain" src="./swiperLong3.png" />
+            <img className=" p-6" src="./swiperLong3.png" />
           </SwiperSlide>
         </Swiper>
       </div>
