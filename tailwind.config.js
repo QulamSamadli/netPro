@@ -8,6 +8,7 @@ export default {
         homeslider: 'url("../homeSlider.png")',
         homeAbout: 'url("../homeAbout.png")',
         swiperBg2: 'url("../swiperBg2.png")',
+        servicesBg: 'url("../servicesBg.png")',
       },
 
       screens: {

@@ -7,6 +7,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { NavLink } from "react-router-dom";
 import Button from "../../Components/common/Button";
 import SecondSwiper from "../../Components/secondSwiper";
+import ServicesCard from "../../Components/common/ServicesCard";
 const Home = () => {
   return (
     <>
@@ -72,6 +73,7 @@ const Home = () => {
         </div>
       </div>
    <SecondSwiper/>
+   <ServicesCard/>
     </>
   );
 };
