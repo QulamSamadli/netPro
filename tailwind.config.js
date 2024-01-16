@@ -10,6 +10,7 @@ export default {
         swiperBg2: 'url("../swiperBg2.png")',
         servicesBg: 'url("../servicesBg.png")',
         thirdSwiper: 'url("../thirdSwiper.png")',
+        questionBg: 'url("../questionBg.png")',
       },
 
       screens: {

@@ -10,6 +10,7 @@ import SecondSwiper from "../../Components/secondSwiper";
 import ServicesCard from "../../Components/common/ServicesCard";
 import ThirdSwiper from "../../Components/ThirdSwiper";
 import FourSwiper from "../../Components/FourSwiper";
+import Question from "../../Components/Question";
 const Home = () => {
   return (
     <>
@@ -36,7 +37,7 @@ const Home = () => {
               Avadanlıqların Quraşdırılması və Konfiqurasiyası
             </p>
 
-            <Button title="Daha Ətraflı" to="/products" darkMode  />
+            <Button title="Daha Ətraflı" to="/products" darkMode />
           </div>
         </SwiperSlide>
       </Swiper>
@@ -61,11 +62,13 @@ const Home = () => {
       </div>
       <div className="container flex justify-between items-center p-10">
         <div className="w-[288px]">
-          <h2 className="text-4xl text-[#435072] font-bold ">Partnyorlar və Müştərilər</h2>
+          <h2 className="text-4xl text-[#435072] font-bold ">
+            Partnyorlar və Müştərilər
+          </h2>
         </div>
         <div className="items-center  grid grid-rows-2 grid-flow-col gap-x-20">
-          <img  src="./vertivPartnyor.png" alt="" />
-          <img  src="./glossePartnyor.png" alt="" />
+          <img src="./vertivPartnyor.png" alt="" />
+          <img src="./glossePartnyor.png" alt="" />
           <img src="./dealomPartnyor.png" alt="" />
           <img src="./deltaPartnyor.png" alt="" />
           <img src="./autoPartnyor.png" alt="" />
@@ -74,10 +77,11 @@ const Home = () => {
           <img src="./guardanPartnyor.png" alt="" />
         </div>
       </div>
-   <SecondSwiper/>
-   <ServicesCard/>
-   <ThirdSwiper/>
-   <FourSwiper/>
+      <SecondSwiper />
+      <ServicesCard />
+      <ThirdSwiper />
+      <FourSwiper />
+      <Question />
     </>
   );
 };
