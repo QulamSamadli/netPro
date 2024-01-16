@@ -9,6 +9,7 @@ import Button from "../../Components/common/Button";
 import SecondSwiper from "../../Components/secondSwiper";
 import ServicesCard from "../../Components/common/ServicesCard";
 import ThirdSwiper from "../../Components/ThirdSwiper";
+import FourSwiper from "../../Components/FourSwiper";
 const Home = () => {
   return (
     <>
@@ -76,6 +77,7 @@ const Home = () => {
    <SecondSwiper/>
    <ServicesCard/>
    <ThirdSwiper/>
+   <FourSwiper/>
     </>
   );
 };

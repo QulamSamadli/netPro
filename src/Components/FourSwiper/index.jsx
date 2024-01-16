@@ -10,15 +10,16 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 const images = [
-  "./swiperVertiv3.png",
-  "./swiperMakelsan3.png",
-  "./swiperLong3.png",
+  "./fourSwiper4.png",
+  "./fourSwiper1.png",
+  "./fourSwiper2.png",
+  "./fourSwiper3.png",
 ];
 
 const FourSwiper = () => {
   return (
-    <div className=" h-[300px] container flex flex-col items-center p-4 ">
-    <h2 className="text-4xl font-bold text-[white]">Brendlər</h2>
+    <div className="  container flex flex-col items-center p-4 ">
+    <h2 className="text-4xl font-bold text-[#435072]">Brendlər</h2>
     <Swiper
       effect={"coverflow"}
       grabCursor={true}
@@ -34,12 +35,12 @@ const FourSwiper = () => {
       pagination={true}
       autoplay={{delay:2000}}
       modules={[EffectCoverflow, Pagination,Autoplay]}
-      className={`h-[490px] ${style.mySwiper}`}
+      className={`${style.mySwiper}`}
     >
       {images.map((image) => {
         return (
           <SwiperSlide className={`bg-white ${style.mySwiperSlide}`}>
-            <img className="p-6" src={image} />
+            <img  src={image} />
           </SwiperSlide>
         );
       })}
