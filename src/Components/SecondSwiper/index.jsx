@@ -2,19 +2,26 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
-import '../SecondSwiper/SecondSwiper.css';
+
+import style from './SecondSwiper.module.css'
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination,Autoplay } from 'swiper/modules';
+
+const images = [
+  {id:1,img:"./SwiperLogo2.png",title:"DC Power Systems",description:"Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power"},
+{id:2,img:"./SwiperLogo2.png",title:"DC Power Systems",description:"Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power"},
+{id:3,img:"./SwiperLogo2.png",title:"DC Power Systems",description:"Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power"},
+ 
+];
 
 const SecondSwiper = () => {
   return (
     <div className=" bg-swiperBg2">
-    <div className='container ' >
+    <div className='container' >
     <h2 className='text-center text-[white] font-bold text-4xl py-5'>Məhsullar</h2>
     <Swiper
       effect={'coverflow'}
@@ -29,39 +36,19 @@ const SecondSwiper = () => {
         slideShadows: true,
       }}
       pagination={true}
-      modules={[EffectCoverflow, Pagination]}
-      className="mySwiper h-[490px]"
+      autoplay={{delay:2000}}
+      modules={[EffectCoverflow, Pagination,Autoplay]}
+      className='h-[420px]'
     >
-      <SwiperSlide>
-        <img src="./SwiperLogo2.png" />
-        <h3 className='text-center text-[white] py-3 ' >DC Power Systems</h3>
-        <p className='text-center text-[white]' >Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power</p>
+    {
+      images.map(({id,title,img,description})=>{
+        return  <SwiperSlide className={` ${style.mySwiperSlide}` } id={id}>
+        <img src={img} />
+        <h3 className='text-center text-[white]  ' >{title}</h3>
+        <p className='text-center text-[white]' >{description}</p>
       </SwiperSlide>
-      <SwiperSlide>
-        <img src="./SwiperLogo2.png" />
-        <h3 className='text-center text-[white] py-3 ' >DC Power Systems</h3>
-        <p className='text-center text-[white]' >Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="./SwiperLogo2.png" />
-        <h3 className='text-center text-[white] py-3 ' >DC Power Systems</h3>
-        <p className='text-center text-[white]' >Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="./SwiperLogo2.png" />
-        <h3 className='text-center text-[white] py-3 ' >DC Power Systems</h3>
-        <p className='text-center text-[white]' >Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="./SwiperLogo2.png" />
-        <h3 className='text-center text-[white] py-3 ' >DC Power Systems</h3>
-        <p className='text-center text-[white]' >Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power</p>
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="./SwiperLogo2.png" />
-        <h3 className='text-center text-[white] py-3 ' >DC Power Systems</h3>
-        <p className='text-center text-[white]' >Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power</p>
-      </SwiperSlide>
+      })
+    }
     
     </Swiper>
   </div>

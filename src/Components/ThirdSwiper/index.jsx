@@ -2,19 +2,25 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "../ThirdSwiper/ThirdSwiper.css";
+// import "../ThirdSwiper/ThirdSwiper.css";
+import style from "./ThirdSwiper.module.css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+const images = [
+  "./swiperVertiv3.png",
+  "./swiperMakelsan3.png",
+  "./swiperLong3.png",
+];
 
 const ThirdSwiper = () => {
   return (
     <div className="   bg-thirdSwiper  ">
       <div className=" h-[300px] container flex flex-col items-center p-4 ">
         <h2 className="text-4xl font-bold text-[white]">Brendlər</h2>
-            <Swiper
+        <Swiper
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
@@ -27,18 +33,17 @@ const ThirdSwiper = () => {
             slideShadows: true,
           }}
           pagination={true}
-          modules={[EffectCoverflow, Pagination]}
-          className="mySwiper h-[490px]"
+          autoplay={{delay:2000}}
+          modules={[EffectCoverflow, Pagination,Autoplay]}
+          className={`h-[490px] ${style.mySwiper}`}
         >
-          <SwiperSlide className="bg-white " >
-            <img className="p-6" src="./swiperVertiv3.png" />
-          </SwiperSlide>
-          <SwiperSlide className="bg-white ">
-            <img className=" p-6" src="./swiperMakelsan3.png" />
-          </SwiperSlide>
-          <SwiperSlide className="bg-white ">
-            <img className=" p-6" src="./swiperLong3.png" />
-          </SwiperSlide>
+          {images.map((image) => {
+            return (
+              <SwiperSlide className={`bg-white ${style.mySwiperSlide}`}>
+                <img className="p-6" src={image} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </div>

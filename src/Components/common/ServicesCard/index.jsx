@@ -3,7 +3,7 @@ import { cards } from '../ServicesRoute'
 
 const ServicesCard = () => {
   return (
-    <div className='bg-servicesBg'>
+    <div className='bg-servicesBg py-10'>
         <div className="container flex flex-col gap-4 ">
         <h2 className='text-4xl py-6 font-bold text-[#435072]'>Xidmətlər</h2>
         <div className=' grid grid-rows-2 grid-flow-col gap-4'>
