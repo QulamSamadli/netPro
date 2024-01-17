@@ -68,6 +68,13 @@ const Footer = () => {
           </div>
           </div>
         </div>
+    
+      </div>
+      <hr />
+      
+      <div className="flex justify-between container text-[white] items-center py-4">
+        <p>Copyright © NETPRO GROUP MMC - 2022</p>
+        <p>Site by JEDAI</p>
       </div>
     </div>
   );
