@@ -21,7 +21,7 @@ const Question = ({ grid = false }) => {
             <textarea className="border rounded-lg p-4" placeholder="Mesajınız" cols="30" rows="10"></textarea>
           </div>
         </div>
-        <Button title="Gonder" to="/products" darkMode />
+        <Button title="Gonder" to="/contact" darkMode />
       </div>
     </div>
   );
