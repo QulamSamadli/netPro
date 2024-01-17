@@ -13,54 +13,39 @@ const Header = () => {
           <NavLink className={"group flex items-center relative py-4"} to="/">
             <FaCaretRight className="group-hover:rotate-90 duration-300" />
             Əsas səhifə
+           
           </NavLink>
-          <NavLink
-            className={"group flex items-center relative py-4"}
-            to="/about"
-          >
+          <NavLink className={"group flex items-center relative py-4"} to="/about">
             <FaCaretRight className="group-hover:rotate-90 duration-300" />
             Haqqımızda
+          
           </NavLink>
-          <NavLink
-            className={"group flex items-center relative py-4"}
-            to="/products"
-          >
+          <NavLink className={"group flex items-center relative py-4"} to="/products">
             <FaCaretRight className="group-hover:rotate-90 duration-300" />
             Məhsullar
             <ul className="absolute left-0 space-y-5 top-12 z-10 bg-white w-32 p-2 hidden group-hover:block">
-              <li>
-                <img src="./vertiv.png" alt="" />
-              </li>
+              <li ><img src="./vertiv.png" alt="" /></li>
               <hr />
-              <li>
-                <img src="./maklesan.png" alt="" />
-              </li>
+              <li><img src="./maklesan.png" alt="" /></li>
               <hr />
-              <li>
-                <img src="./long.png" alt="" />
-              </li>
+              <li><img src="./long.png" alt="" /></li>
+              
             </ul>
           </NavLink>
-          <NavLink
-            className={"group flex items-center relative py-4"}
-            to="/services"
-          >
+          <NavLink className={"group flex items-center relative py-4"} to="/services">
             <FaCaretRight className="group-hover:rotate-90 duration-300" />
             Xidmətlər və Həllər
+            
           </NavLink>
-          <NavLink
-            className={"group flex items-center relative py-4"}
-            to="/blog"
-          >
+          <NavLink className={"group flex items-center relative py-4"} to="/blog">
             <FaCaretRight className="group-hover:rotate-90 duration-300" />
             Qalereya və Bloq
+           
           </NavLink>
-          <NavLink
-            className={"group flex items-center relative py-4"}
-            to="/contact"
-          >
+          <NavLink className={"group flex items-center relative py-4"} to="/contact">
             <FaCaretRight className="group-hover:rotate-90 duration-300" />
             Əlaqə
+           
           </NavLink>
         </nav>
       </div>
