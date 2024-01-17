@@ -12,6 +12,7 @@ export default {
         thirdSwiper: 'url("../thirdSwiper.png")',
         questionBg: 'url("../questionBg.png")',
         footerBg: 'url("../footerBg.png")',
+      
       },
 
       screens: {
