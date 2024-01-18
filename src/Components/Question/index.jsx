@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../common/Button";
+import axios from "axios";
+
+const _url = "http://localhost:5005/collabrators"
 
 const Question = ({ grid = false }) => {
+  const data = {fullname:"",email:"",tel:"",text:""}
+  const [input,setInput]=useState([])
+const handleData=(e)=>{
+  setInput({...input,[e.target.name]:e.target.value})
+
+}
+const handleClick =(e)=>{
+e.preventDefault()
+axios.post(_url,input).then((res)=>{
+  console.log(res);
+})
+}
+  
   return (
     <div className="bg-questionBg">
       <div className="container flex justify-center flex-col items-center gap-3 p-4">
@@ -13,15 +29,16 @@ const Question = ({ grid = false }) => {
           }`}
         >
           <div className="grid gap-2">
-            <input className="p-4 border rounded-lg" type="text" placeholder="Adınız və Soyadınız" />
-            <input className="p-4 border rounded-lg" type="email" placeholder="Email ünvanı" />
-            <input className="p-4 border rounded-lg" type="tel" placeholder="Əlaqə nömrəsi" />
+            <input name="fName" value={input.fName}  onChange={handleData}  className="p-4 border rounded-lg"  type="text" placeholder="Adınız və Soyadınız" />
+            <input name="email" value={input.email} onChange={handleData} className="p-4 border rounded-lg"  type="email" placeholder="Email ünvanı" />
+            <input name="tel" value={input.tel} onChange={handleData} className="p-4 border rounded-lg"  type="tel" placeholder="Əlaqə nömrəsi" />
           </div>
           <div>
-            <textarea className="border rounded-lg p-4" placeholder="Mesajınız" cols="30" rows="10"></textarea>
+            <textarea name="text" value={input.text} onChange={handleData} className="border rounded-lg p-4" placeholder="Mesajınız" cols="30" rows="10"></textarea>
           </div>
         </div>
-        <Button title="Gonder" to="/contact" darkMode />
+        <button onClick={handleClick}>Gonder</button>
+        {/* <Button  title="Gonder" to="/contact" darkMode /> */}
       </div>
     </div>
   );

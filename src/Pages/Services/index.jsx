@@ -4,7 +4,7 @@ import HeaderBottom from '../../Components/HeaderBottom'
 const Services = () => {
   return (
     <div>
-<HeaderBottom title1="salam" title2="salam2"/>
+<HeaderBottom title1="salam" title2="salam2" title3="salam1"/>
 
     </div>
   )
