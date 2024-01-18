@@ -82,7 +82,7 @@ const SecondSwiper = () => {
         >
           {images.map(({ id, title, img, description }) => {
             return (
-              <SwiperSlide className={` ${style.mySwiperSlide}`} id={id}>
+              <SwiperSlide className={` ${style.mySwiperSlide}`} key={id}>
                 <img src={img} />
                 <div className="p-4">
                   <h3 className="text-center text-[white] my-[15px]">

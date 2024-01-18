@@ -16,6 +16,10 @@ e.preventDefault()
 axios.post(_url,input).then((res)=>{
   console.log(res);
 })
+setInput(({...data}))
+
+
+
 }
   
   return (
@@ -29,7 +33,7 @@ axios.post(_url,input).then((res)=>{
           }`}
         >
           <div className="grid gap-2">
-            <input name="fName" value={input.fName}  onChange={handleData}  className="p-4 border rounded-lg"  type="text" placeholder="Adınız və Soyadınız" />
+            <input name="fullname" value={input.fullname}  onChange={handleData}  className="p-4 border rounded-lg"  type="text" placeholder="Adınız və Soyadınız" />
             <input name="email" value={input.email} onChange={handleData} className="p-4 border rounded-lg"  type="email" placeholder="Email ünvanı" />
             <input name="tel" value={input.tel} onChange={handleData} className="p-4 border rounded-lg"  type="tel" placeholder="Əlaqə nömrəsi" />
           </div>

@@ -39,7 +39,7 @@ const FourSwiper = () => {
     >
       {images.map((image) => {
         return (
-          <SwiperSlide className={`bg-white ${style.mySwiperSlide}`}>
+          <SwiperSlide  key ={image} className={`bg-white ${style.mySwiperSlide}`}>
             <img  src={image} />
           </SwiperSlide>
         );
