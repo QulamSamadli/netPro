@@ -19,7 +19,7 @@ const images = [
 const FourSwiper = () => {
   return (
     <div className="  container flex flex-col items-center p-4 ">
-    <h2 className="text-4xl font-bold text-[#435072]">Brendlər</h2>
+    <h2 className="text-4xl font-bold text-[#435072]">Qalereya</h2>
     <Swiper
       effect={"coverflow"}
       grabCursor={true}

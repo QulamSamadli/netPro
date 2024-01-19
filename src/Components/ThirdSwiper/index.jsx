@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -9,13 +9,20 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
-const images = [
-  "./swiperVertiv3.png",
-  "./swiperMakelsan3.png",
-  "./swiperLong3.png",
-];
+import axios from "axios";
+const _url = "http://localhost:5380/brend"
 
 const ThirdSwiper = () => {
+const [brend,setBrend]=useState([])
+useEffect(()=>{
+axios.get(_url).then(({data})=>{
+
+  setBrend(data)
+})
+
+},[])
+
+
   return (
     <div className="   bg-thirdSwiper  ">
       <div className="  container flex flex-col items-center p-4 ">
@@ -37,10 +44,10 @@ const ThirdSwiper = () => {
           modules={[EffectCoverflow, Pagination,Autoplay]}
           className={` ${style.mySwiper}`}
         >
-          {images.map((image) => {
+          {brend.map(({img,id}) => {
             return (
-              <SwiperSlide key={image} className={`bg-white ${style.mySwiperSlide}`}>
-                <img className="p-6" src={image} />
+              <SwiperSlide key={id} className={`bg-white ${style.mySwiperSlide}`}>
+                <img className="p-6" src={img} />
               </SwiperSlide>
             );
           })}
