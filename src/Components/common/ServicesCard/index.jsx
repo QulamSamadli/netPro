@@ -40,14 +40,14 @@ const ServicesCard = () => {
           {service.map(({ title, id, description, img }) => {
             return (
               <div
-                className="border border-white bg-white  rounded-2xl flex flex-col justify-around p-4"
+                className="border  border-white bg-white  rounded-2xl flex flex-col justify-around p-3"
                 key={id}
               >
-                <div className="rounded-full bg-slate-300 w-[55px] h-[55px] flex items-center justify-center">
+                <div className=" m-2 rounded-full bg-slate-300 w-[55px] h-[55px] flex items-center justify-center">
                   <img src="./cardsImg.png" alt="" />
                 </div>
-                <h2 className="text-xl font-bold text-[#435072]">{title}</h2>
-                <p className="text-sm font-normal text-[#606F84]">
+                <h2 className="text-xl m-2 font-bold text-[#435072]">{title}</h2>
+                <p className="text-sm m-2 font-normal text-[#606F84]">
                   {description}
                 </p>
               </div>
