@@ -1,9 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import style from "./ClientSwiper.module.css";
+
+// import required modules
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import axios from "axios";
 
 const _url = "http://localhost:5020/client";
@@ -30,15 +36,31 @@ const Client = () => {
         </h2>
       </div>
 
-      <Swiper className="mySwiper">
-        {img.map(({ id, img }) => {
-          return (
-            <SwiperSlide className="text-center" key={id}>
-              <img src={`${img}`} alt="" />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+       <Swiper
+         effect={'coverflow'}
+         grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+           depth: 0,
+           modifier: 1,
+           slideShadows: true,
+         }}
+         autoplay={{delay:2000}}
+         modules={[EffectCoverflow,Autoplay]}
+         className={`${style.mySwiper}`}
+       >
+        
+      {img.map(({ id, img }) => {
+        return (      
+            <SwiperSlide className={`bg-transparent flex justify-center ${style.mySwiperSlide}`}  key={id}><img src={`${img}`} alt="" /></SwiperSlide>
+            );
+      })}
+     
+      </Swiper> 
+     
     </div>
   );
 };
@@ -55,3 +77,10 @@ export default Client;
 //   <img src="./deltaPartnyor.png" alt="" />
 //   <img src="./guardanPartnyor.png" alt="" />
 // </div>
+
+
+
+
+
+
+
