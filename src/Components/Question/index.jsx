@@ -68,7 +68,7 @@ const Question = ({ grid = false }) => {
             ></textarea>
           </div>
         </div>
-        <button onClick={handleClick}>Gonder</button>
+        <button className=" flex items-center justify-center transition duration-300 min-h-[3.1875rem] w-[11.625rem] font-medium text-[1.125rem] border rounded-md hover:bg-[white] hover:text-[#435072]  text-[white] bg-[#435072] border-[#435072]" onClick={handleClick}>Gonder</button>
         {/* <Button  title="Gonder" to="/contact" darkMode /> */}
       </div>
     </div>
