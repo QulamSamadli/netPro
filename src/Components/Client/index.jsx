@@ -38,9 +38,10 @@ const Client = () => {
 
        <Swiper
          effect={'coverflow'}
+         loop={true}
          grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        slidesPerView={1}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,

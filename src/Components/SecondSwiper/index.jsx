@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import style from "./SecondSwiper.module.css";
@@ -7,53 +7,24 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Autoplay } from "swiper/modules";
+import axios from "axios";
 
-const images = [
-  {
-    id: 1,
-    img: "./SwiperLogo2.png",
-    title: "DC Power Systems",
-    description:
-      "Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power",
-  },
-  {
-    id: 2,
-    img: "./SwiperLogo2.png",
-    title: "DC Power Systems",
-    description:
-      "Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power",
-  },
-  {
-    id: 3,
-    img: "./SwiperLogo2.png",
-    title: "DC Power Systems",
-    description:
-      "Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power",
-  },
-  {
-    id: 4,
-    img: "./SwiperLogo2.png",
-    title: "DC Power Systems",
-    description:
-      "Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power",
-  },
-  {
-    id: 5,
-    img: "./SwiperLogo2.png",
-    title: "DC Power Systems",
-    description:
-      "Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power",
-  },
-  {
-    id: 6,
-    img: "./SwiperLogo2.png",
-    title: "DC Power Systems",
-    description:
-      "Allow efficient distribution of your telecom and data center power utilizing these reliable, scalable and flexible DC power",
-  },
-];
+const _url = "http://localhost:5300/products"
 
 const SecondSwiper = () => {
+
+  const [products,setProducts] = useState([])
+
+  useEffect(()=>{
+
+axios.get(_url).then(({data})=>{
+console.log(data);
+setProducts(data)
+})
+
+  },[])
+
+
   return (
     <div className=" bg-swiperBg2">
       <div className="container py-10">
@@ -80,7 +51,7 @@ const SecondSwiper = () => {
           autoplay={{ delay: 2000 }}
           modules={[EffectCoverflow, Autoplay]}
         >
-          {images.map(({ id, title, img, description }) => {
+          {products.map(({ id, title, img, description }) => {
             return (
               <SwiperSlide className={` ${style.mySwiperSlide}`} key={id}>
                 <img src={img} />
