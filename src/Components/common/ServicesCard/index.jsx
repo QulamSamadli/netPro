@@ -18,13 +18,7 @@ const ServicesCard = () => {
       });
   }, []);
 
-  // axios.post("url", {
-  //   fullname: "lorem",
-  //   email: "test",
-  //   number: 123,
-  //   msg: "lorem",
-  // });
-
+ 
   // grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
 
   return (
