@@ -48,7 +48,7 @@ const Home = () => {
         <h3 className="text-[40px] font-bold">
           “NetPro Group” şirkəti haqqında
         </h3>
-        <p className="text-[20px] text-center">
+        <p className="text-xl text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
           ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta.
           Elementum, pharetra, egestas non vulputate eget odio elementum. Mauris
