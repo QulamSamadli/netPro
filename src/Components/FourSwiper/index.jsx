@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -9,14 +9,18 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
-const images = [
-  "./fourSwiper4.png",
-  "./fourSwiper1.png",
-  "./fourSwiper2.png",
-  "./fourSwiper3.png",
-];
+import axios from "axios";
+const _url = "http://localhost:5389/dalery"
 
 const FourSwiper = () => {
+const [galery,setGalery]=useState([])
+useEffect(()=>{
+axios.get(_url).then(({data})=>{
+setGalery(data)
+})
+
+},[])
+
   return (
     <div className="  container flex flex-col items-center p-4 ">
     <h2 className="text-4xl font-bold text-[#435072]">Qalereya</h2>
@@ -37,10 +41,10 @@ const FourSwiper = () => {
       modules={[EffectCoverflow, Pagination,Autoplay]}
       className={`${style.mySwiper}`}
     >
-      {images.map((image) => {
+      {galery.map(({img,id}) => {
         return (
-          <SwiperSlide  key ={image} className={`bg-white ${style.mySwiperSlide}`}>
-            <img  src={image} />
+          <SwiperSlide  key ={id} className={`bg-white ${style.mySwiperSlide}`}>
+            <img  src={img} />
           </SwiperSlide>
         );
       })}
