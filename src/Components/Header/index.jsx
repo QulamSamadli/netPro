@@ -4,7 +4,7 @@ import { FaCaretRight } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <div className="flex justify-between items-center pt-2">
         <Link to="/">
           <img src="./headerLogo.png" alt="" />

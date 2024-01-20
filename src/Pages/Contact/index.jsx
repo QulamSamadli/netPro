@@ -1,8 +1,11 @@
 import React from 'react'
+import NavbarMob from '../../NavbarMob'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>Contact
+      <NavbarMob/>
+    </div>
   )
 }
 
