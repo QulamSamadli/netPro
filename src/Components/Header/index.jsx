@@ -47,6 +47,8 @@ const Header = () => {
             Əlaqə
            
           </NavLink>
+
+          <div className="burger">---</div>
         </nav>
       </div>
     </div>

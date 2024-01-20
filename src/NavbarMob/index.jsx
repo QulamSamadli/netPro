@@ -2,10 +2,10 @@ import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const NavbarMob = () => {
+const NavbarMob = ( hamburger=false) => {
   return (
     
-      <nav className="text-[#435072;] flex flex-col w-[25%] items-center absolute gap-3 h-[100%]  bg-[white] text-sm font-bold">
+      <nav className={`containertext-[#435072;] flex flex-col w-[25%] items-center  hidden  absolute left-[75%] z-10 justify-evenly h-[100vh]  bg-[white] text-sm font-bold ${hamburger ? "block" : "hidden"}`}>
         <NavLink className={"group flex items-center "} to="/">
           <FaCaretRight className="group-hover:rotate-90 duration-300" />
           Əsas səhifə
