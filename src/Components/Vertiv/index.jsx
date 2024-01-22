@@ -15,7 +15,7 @@ const Vertiv = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container   ">
       <HeaderBottom
         title1={"VERTIV"}
         title2={"Əsas səhifə"}
@@ -23,7 +23,7 @@ const Vertiv = () => {
         title4={"-->Fasiləsiz Enerji Təchizatı"}
       />
 
-      <div>
+      <div className="flex">
         <Category />
         <div>
           <h2>Fasiləsiz Enerji Təchizatı (UPS)</h2>
@@ -37,7 +37,7 @@ const Vertiv = () => {
 
           {vertiv2.map(({title,id,img,description}) => {
             return (
-              <div key={id}>
+              <div className="border-2 m-2 flex items-center p-4 gap-3" key={id}>
                 <img src={img} alt="" />
                 <div>
                   <p>{title}</p>
