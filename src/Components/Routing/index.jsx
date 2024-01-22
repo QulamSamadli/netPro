@@ -5,6 +5,7 @@ import Services from "../../Pages/Services";
 import Blog from "../../Pages/Blog";
 import About from "../../Pages/About";
 import Contact from "../../Pages/Contact";
+import Vertiv from "../Vertiv";
 
  export const routes = [
   { id: 1, path: "/", element: <Home />, title: "Əsas səhifə" },
@@ -13,5 +14,6 @@ import Contact from "../../Pages/Contact";
   { id: 4, path: "/services",element: <Services />,title: "Xidmətlər və Həllər"},
   { id: 5, path: "/blog", element: <Blog />, title: "Qalereya və Bloq" },
   { id: 6, path: "/contact", element: <Contact />, title: "Əlaqə" },
+  { id: 6, path: "/vertiv", element: <Vertiv/> },
   { id: 7, path: "*", element: <Error /> },
 ];

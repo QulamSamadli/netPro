@@ -3,13 +3,13 @@ import { Link, useParams } from 'react-router-dom'
 import { routes } from '../Routing'
 
 
-const HeaderBottom = ({title1,title2,title3}) => {
+const HeaderBottom = ({title1,title2,title3,title4}) => {
     
   return (
-    <div>
-     <h2> {title3}</h2>
-     <div className='flex'>
-    <p>{title1}</p> 9ox9 <p>{title2}</p>
+    <div className='bg-bgRoute flex flex-col items-center text-white'>
+     <h2 className='text-[36px] font-bold'> {title3}</h2>
+     <div className='flex  text-[18px] font-medium'>
+    <p>{title2}</p>{"-->"} <p>{title1}</p> <p>{title4}</p>
      </div>
 
     </div>

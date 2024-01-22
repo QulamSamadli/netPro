@@ -24,7 +24,7 @@ const Header = () => {
             <FaCaretRight className="group-hover:rotate-90 duration-300" />
             Məhsullar
             <ul className="absolute left-0 space-y-5 top-12 z-10 bg-white w-32 p-2 hidden group-hover:block">
-              <li ><img src="./vertiv.png" alt="" /></li>
+              <Link to="vertiv" ><img src="./vertiv.png" alt="" /></Link>
               <hr />
               <li><img src="./maklesan.png" alt="" /></li>
               <hr />
