@@ -26,8 +26,8 @@ const Vertiv = () => {
       <div className="flex container  my-6  ">
         <Category />
         <div className="mx-10" >
-          <h2 className="">Fasiləsiz Enerji Təchizatı (UPS)</h2>
-          <p>
+          <h2 className="text-[24px] text-[#435072] font-bold my-2 mx-2">Fasiləsiz Enerji Təchizatı (UPS)</h2>
+          <p className=" text-[#606F84]  my-2 mx-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac,
             massa nec pulvinar nunc, nulla a sed. Sapien massa lacus, mi,
             egestas metus, vitae non metus. Cras lorem quisque in iaculis tortor
@@ -40,8 +40,8 @@ const Vertiv = () => {
               <div className=" bg-[#F4F4F4] rounded-lg border-2 m-2 flex items-center p-4 gap-3" key={id}>
                 <img src={img} alt="" />
                 <div className="border-r-2 flex flex-col gap-4 border-[#D4DAEA]">
-                  <p>{title}</p>
-                  <p>{description}</p>
+                  <p className="text-[18px] text-[#435072] font-medium">{title}</p>
+                  <p className="text-[14px] text-[#606F84] ">{description}</p>
                 </div>
                 <div className="flex flex-col gap-6">
                   <p>download</p>
