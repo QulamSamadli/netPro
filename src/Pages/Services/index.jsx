@@ -13,7 +13,7 @@ const Services = () => {
   }, []);
   return (
     <div className=" ">
-      <HeaderBottom title1="Xidmətlər və Həllər" title2="Əsas səhifə" title3="Əsas səhifə" />
+      <HeaderBottom title1="Əsas səhifə" title2="Əsas səhifə" title3="Xidmətlər və Həllər" />
 
       <div className="bg-[#F4F4F4] p-6 container flex flex-col">
         <h2 className=" text-center  text-[32px] text-[#435072] font-bold ">

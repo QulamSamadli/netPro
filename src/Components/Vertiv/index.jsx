@@ -1,8 +1,12 @@
 import React from 'react'
+import HeaderBottom from '../HeaderBottom'
 
 const Vertiv = () => {
   return (
-    <div>Vertiv</div>
+    <div>
+<HeaderBottom  />
+    
+    </div>
   )
 }
 
