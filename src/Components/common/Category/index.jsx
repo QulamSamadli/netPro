@@ -12,17 +12,17 @@ const Category = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container my-6">
       <div className="w-[356px] border-solid border-[#D4DAEA] rounded-lg border-2">
         <h2 className="text-[24px] font-bold p-4 border-solid border-[##D4DAEA] bg-[#435072] text-white ">
           Category
         </h2>
-        <div>
+        <div  className="flex gap-2 flex-col items-start px-4" >
           {category.map(({ title }) => {
             return (
               <Link
                 to="/"
-                className="text-[#435072] p-4   text-[18px] font-bold"
+                className="text-[#435072]  text-[18px] font-bold"
               >
                 {title} <hr />
               </Link>
