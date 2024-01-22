@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../common/Button";
 import axios from "axios";
 
-const _url = "http://localhost:5389/collabrators";
+const _url = "http://localhost:5381/collabrators";
 
 const Question = ({ grid = false }) => {
   const data = { fullname: "", email: "", tel: "", text: "" };
@@ -14,8 +14,9 @@ const Question = ({ grid = false }) => {
     e.preventDefault();
     axios.post(_url, input).then((res) => {
       console.log(res);
+      setInput({ ...data });
+      alert("Ugurla sonlandir")
     });
-    setInput({ ...data });
   };
 
   return (

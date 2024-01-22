@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import axios from "axios";
-const _url = "http://localhost:5389/dalery"
+const _url = "http://localhost:5381/dalery"
 
 const FourSwiper = () => {
 const [galery,setGalery]=useState([])

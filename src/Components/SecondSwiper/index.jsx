@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 import axios from "axios";
 
-const _url = "http://localhost:5300/products"
+const _url = "http://localhost:5381/products"
 
 const SecondSwiper = () => {
 

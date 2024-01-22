@@ -12,7 +12,7 @@ import style from "./ClientSwiper.module.css";
 import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import axios from "axios";
 
-const _url = "http://localhost:5020/client";
+const _url = "http://localhost:5381/client";
 
 const Client = () => {
   const [img, setImg] = useState([]);

@@ -13,7 +13,7 @@ import FourSwiper from "../../Components/FourSwiper";
 import Question from "../../Components/Question";
 import axios from "axios";
 import Client from "../../Components/Client";
-const _url = "http://localhost:5020/swiper1";
+const _url = "http://localhost:5381/swiper1";
 
 
 const Home = () => {
@@ -32,7 +32,7 @@ const Home = () => {
         <Swiper spaceBetween={50} slidesPerView={1}>
          {
           swiper.map(({id,bgImg,title})=>{
-           return <SwiperSlide key={id}    className={`bg-cover bg-center ${bgImg}`}>
+           return <SwiperSlide key={id}    className={`bg-cover bg-center bg-homeslider`}>
             <div className="flex container min-h-[500px] justify-center gap-10 flex-col items-start ">
               <p className="text-[#435072] font-[700] text-[42px] max-w-[600px]  ">
             {title}

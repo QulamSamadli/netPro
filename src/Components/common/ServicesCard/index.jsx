@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // import { cards } from '../ServicesRoute'
 import axios from "axios";
 
-const _link = "http://localhost:3000/services";
+const _link = "http://localhost:5381/services";
 
 const ServicesCard = () => {
   const [service, setService] = useState([]);
