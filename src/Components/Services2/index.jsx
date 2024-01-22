@@ -39,18 +39,18 @@ const Services2 = () => {
           </div>
         </div>
         <div>
-          <h2></h2>
-          <p></p>
-          <img src="" alt="" />
-          <p></p>
-          <h2></h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <h2>Avadanlıqların quraşdırılması və konfiqurasiyası</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac, massa nec pulvinar nunc, nulla a sed. Sapien massa lacus, mi, egestas metus, vitae non metus. Cras lorem quisque in iaculis tortor pharetra est dolor. Enim ipsum hac pulvinar dolor. Congue ut viverra id sagittis vulputate sed posuere.</p>
+          <img src="./services2-1.png" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit id urna ultricies consectetur cursus. Urna, cursus pharetra quam pretium tincidunt a praesent. Risus in in consequat lobortis consectetur. Cum amet sit netus auctor eu posuere. Duis sit mattis cras sagittis, consectetur suscipit sapien imperdiet. Non, ultricies semper magna sit auctor donec eu. Etiam tortor est cum gravida facilisi pretium dui, massa volutpat. Diam erat mattis fringilla quis bibendum adipiscing viverra. Et dolor elementum et, venenatis eu enim. Maecenas et lectus lacus amet arcu senectus. Tristique blandit vulputate ante odio neque consectetur dictumst et imperdiet. Venenatis ut dui nec nulla elementum enim id sollicitudin sed. Felis eget leo, nisl, magna eget. Nunc neque netus tincidunt donec aliquet vel bibendum cras fringilla. Laoreet elementum, ut blandit id malesuada tincidunt risus lacus ipsum. Auctor aliquam proin euismod auctor morbi velit volutpat scelerisque.</p>
+          <h2>Nə üçün biz?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper risus nibh quam id tortor tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper risus nibh quam id tortor tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper risus nibh quam id tortor tellus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper risus nibh quam id tortor tellus.</p>
           <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src="./services2-2.png" alt="" />
+            <img src="./services2-3.png" alt="" />
           </div>
         </div>
       </div>
