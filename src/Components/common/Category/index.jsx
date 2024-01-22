@@ -15,7 +15,7 @@ const Category = () => {
     <div >
       <div className="w-[356px] border-solid border-[#D4DAEA] rounded-lg border-2">
         <h2 className="text-[24px] font-bold p-4 border-solid border-[##D4DAEA] bg-[#435072] text-white ">
-          Category
+        Kateqoriya
         </h2>
         <div  className="flex gap-2 flex-col items-start px-4" >
           {category.map(({ title }) => {
