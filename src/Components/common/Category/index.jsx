@@ -12,7 +12,7 @@ const Category = () => {
   }, []);
 
   return (
-    <div className="container my-6">
+    <div >
       <div className="w-[356px] border-solid border-[#D4DAEA] rounded-lg border-2">
         <h2 className="text-[24px] font-bold p-4 border-solid border-[##D4DAEA] bg-[#435072] text-white ">
           Category
