@@ -22,7 +22,7 @@ const Category = () => {
             return (
               <Link
                 to="/"
-                className="text-[#435072]  text-[18px] font-bold"
+                className="text-[#435072] my-2 text-[18px] font-bold"
               >
                 {title} <hr />
               </Link>
