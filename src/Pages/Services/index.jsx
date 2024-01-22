@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeaderBottom from "../../Components/HeaderBottom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const _url = "http://localhost:5381/solutions";
 
@@ -21,9 +22,9 @@ const Services = () => {
         </h2>
 
         <div className="flex flex-wrap justify-center gap-5  ">
-          {solution.map(({ id, img, title, description }) => {
+          {solution.map(({ id, img, title, description,to }) => {
             return (
-              <div key={id} className="border-[#D4DAEA] w-[290px] p-4 flex flex-col gap-2 border-[1px] rounded-[10px]">
+              <Link to={to} key={id} className="border-[#D4DAEA] w-[290px] p-4 flex flex-col gap-2 border-[1px] rounded-[10px]">
                 <img src={img} alt="" />
                 <h2 className="text-[18px] h-14 text-[#435072] font-bold">
                   {title}
@@ -33,7 +34,7 @@ const Services = () => {
                 <p className="text-[13px]  text-[#606F84] font-normal">
                   {description}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>
