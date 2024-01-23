@@ -28,8 +28,8 @@ const Contact = () => {
             <div>
               <h2 className="text-[26px] font-bold text-[#435072]">Telefon</h2>
               <p className="text-[18px] w-[281px] text[#606F84]">
-              +99450 5754080 <br />
-              +99450 5754080
+                +99450 5754080 <br />
+                +99450 5754080
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Contact = () => {
             <div>
               <h2 className="text-[26px] font-bold text-[#435072]">Email</h2>
               <p className="text-[18px] w-[281px] text[#606F84]">
-              info@netprogroup.az 
+                info@netprogroup.az
               </p>
             </div>
           </div>
