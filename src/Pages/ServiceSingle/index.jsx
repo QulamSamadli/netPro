@@ -43,7 +43,7 @@ const ServiceSingle = () => {
                   key={id}
                   to={`/services/${id}`}
                   className={`${
-                    +id === +service.id ? "text-blue-900" : "text-gray-400"
+                    +id === +service.id ? "text-[#435072]" : "text-gray-400"
                   } `}
                 >
                   {title}
