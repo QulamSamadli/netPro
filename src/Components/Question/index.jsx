@@ -20,7 +20,7 @@ const Question = ({ grid = false }) => {
   };
 
   return (
-    <div className="bg-questionBg">
+    <div className={`${grid ? "" : bg-questionBg}`}>
       <div className="container flex  flex-col items-center gap-3 p-4">
         <h2 className="text-4xl text-[#435072] font-bold">Suallarınız var?</h2>
         <p className="text-xl font-normal text-[#435072] ">
