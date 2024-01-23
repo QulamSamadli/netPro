@@ -108,8 +108,8 @@ const ServiceSingle = () => {
               tellus.
             </p>
             <div className="flex gap-4">
-              <img src="./services2-2.png" alt="" />
-              <img src="./services2-3.png" alt="" />
+              <img src="../services2-2.png" alt="" />
+              <img src="../services2-3.png" alt="" />
             </div>
           </div>
         </div>
