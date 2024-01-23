@@ -32,11 +32,11 @@ const ServiceSingle = () => {
         title4="-->Avadanlıqların quraşdırılması"
       />
       <div className="container  grid grid-flow-col ">
-        <div className="w-[356px] h-[450px]  border-solid border-[#D4DAEA] rounded-lg border-2  my-4">
+        <div className="w-[356px] h-[380px]  border-solid border-[#D4DAEA] rounded-lg border-2  my-4">
           <h2 className="text-[24px] rounded-t-lg font-bold p-4 border-solid border-[##D4DAEA] bg-[#435072] text-white ">
             Xidmətlər və Həllər
           </h2>
-          <div className=" p-2 flex flex-col">
+          <div className=" p-2 flex flex-col gap-6">
             {services.map(({ id, title }) => {
               return (
                 <Link
@@ -44,7 +44,7 @@ const ServiceSingle = () => {
                   to={`/services/${id}`}
                   className={`${
                     +id === +service.id ? "text-blue-900" : "text-gray-400"
-                  }`}
+                  } `}
                 >
                   {title}
                 </Link>
