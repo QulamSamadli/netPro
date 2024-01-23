@@ -1,18 +1,28 @@
 import axios from "axios";
+import { useParams } from "react-router";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import HeaderBottom from "../HeaderBottom";
 import { FaCircleCheck } from "react-icons/fa6";
+import HeaderBottom from "../../Components/HeaderBottom";
 
-const _url = "http://localhost:5322/services2";
+const ServiceSingle = () => {
+  const url = "http://localhost:5381/solutions/";
+  const [service, setService] = useState([]);
+  const [services, setServices] = useState([]);
+  const { id } = useParams();
 
-const Services2 = () => {
-  const [services2, setServices2] = useState([]);
   useEffect(() => {
-    axios.get(_url).then(({ data }) => {
-      setServices2(data);
+    axios.get(url).then(({ data }) => {
+      setServices(data);
     });
   }, []);
+
+  useEffect(() => {
+    axios.get(url + id).then(({ data }) => {
+      setService(data);
+    });
+  }, [id]);
+
   return (
     <div>
       <HeaderBottom
@@ -27,13 +37,16 @@ const Services2 = () => {
             Xidmətlər və Həllər
           </h2>
           <div className=" p-2 flex flex-col">
-            {services2.map(({ title }) => {
+            {services.map(({ id, title }) => {
               return (
                 <Link
-                  to="/"
-                  className="text-[#435072] my-2 text-[18px] font-bold"
+                  key={id}
+                  to={`/services/${id}`}
+                  className={`${
+                    +id === +service.id ? "text-blue-900" : "text-gray-400"
+                  }`}
                 >
-                  {title} <hr />
+                  {title}
                 </Link>
               );
             })}
@@ -42,7 +55,9 @@ const Services2 = () => {
 
         <div>
           <div className="m-4 ">
-            <h2 className="text-[#435072] text-[24px] font-bold">Avadanlıqların quraşdırılması və konfiqurasiyası</h2>
+            <h2 className="text-[#435072] text-[24px] font-bold">
+              Avadanlıqların quraşdırılması və konfiqurasiyası
+            </h2>
             <p className=" my-6 text-[#606F84]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               ac, massa nec pulvinar nunc, nulla a sed. Sapien massa lacus, mi,
@@ -51,11 +66,7 @@ const Services2 = () => {
               ut viverra id sagittis vulputate sed posuere.
             </p>
             <div className="w-[841px] h-[407px]">
-              <img
-                className="h-[100%] w-[100%]"
-                src="./services2-1.png"
-                alt=""
-              />
+              <img className="h-[100%] w-[100%]" src={service.img} alt="" />
             </div>
             <p className=" my-6 text-[#606F84]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit id
@@ -77,20 +88,24 @@ const Services2 = () => {
             </p>
             <h2>Nə üçün biz?</h2>
             <p className="flex items-center gap-2 my-6 text-[#606F84]">
-              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum semper risus nibh quam id tortor tellus.
+              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Vestibulum semper risus nibh quam id tortor
+              tellus.
             </p>
             <p className="flex items-center gap-2 my-6 text-[#606F84]">
-              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum semper risus nibh quam id tortor tellus.
+              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Vestibulum semper risus nibh quam id tortor
+              tellus.
             </p>
             <p className="flex items-center gap-2 my-6 text-[#606F84]">
-              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum semper risus nibh quam id tortor tellus.
+              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Vestibulum semper risus nibh quam id tortor
+              tellus.
             </p>
             <p className="flex items-center gap-2 my-6 text-[#606F84]">
-              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum semper risus nibh quam id tortor tellus.
+              <FaCircleCheck /> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Vestibulum semper risus nibh quam id tortor
+              tellus.
             </p>
             <div className="flex gap-4">
               <img src="./services2-2.png" alt="" />
@@ -103,4 +118,4 @@ const Services2 = () => {
   );
 };
 
-export default Services2;
+export default ServiceSingle;

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import NavbarMob from "../../NavbarMob";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <NavbarMob hamburger />
+    </div>
+  );
+};
 
-export default About
+export default About;

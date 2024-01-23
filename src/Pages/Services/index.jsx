@@ -14,7 +14,11 @@ const Services = () => {
   }, []);
   return (
     <div className="">
-      <HeaderBottom  title1="Əsas səhifə" title2="Əsas səhifə" title3="Xidmətlər və Həllər" />
+      <HeaderBottom
+        title1="Əsas səhifə"
+        title2="Əsas səhifə"
+        title3="Xidmətlər və Həllər"
+      />
 
       <div className="bg-[#F4F4F4] p-6 container flex flex-col">
         <h2 className=" text-center  text-[32px] text-[#435072] font-bold ">
@@ -22,9 +26,13 @@ const Services = () => {
         </h2>
 
         <div className="flex flex-wrap justify-center gap-5  ">
-          {solution.map(({ id, img, title, description,to }) => {
+          {solution.map(({ id, img, title, description, to }) => {
             return (
-              <Link to={to} key={id} className="border-[#D4DAEA] w-[290px] p-4 flex flex-col gap-2 border-[1px] rounded-[10px]">
+              <Link
+                to={`/services/${id}`}
+                key={id}
+                className="border-[#D4DAEA] w-[290px] p-4 flex flex-col gap-2 border-[1px] rounded-[10px]"
+              >
                 <img src={img} alt="" />
                 <h2 className="text-[18px] h-14 text-[#435072] font-bold">
                   {title}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = ({ title, to, darkMode}) => {
+const Button = ({ title, to, darkMode }) => {
   return (
     <Link
       to={to}
@@ -11,7 +11,7 @@ const Button = ({ title, to, darkMode}) => {
           : "hover:bg-[#435072] hover:text-[white]  text-[#435072] bg-[white] border-[#435072]`"
       }`}
     >
-      {title} 
+      {title}
     </Link>
   );
 };
