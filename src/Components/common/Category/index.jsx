@@ -1,15 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-const _url = "http://localhost:5382/category1";
+
 
 const Category = () => {
-  const [category, setCategory] = useState([]);
-  useEffect(() => {
-    axios.get(_url).then(({ data }) => {
-      setCategory(data);
-    });
-  }, []);
+ 
 
   return (
     <div >

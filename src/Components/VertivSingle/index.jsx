@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from "react";
 import HeaderBottom from "../HeaderBottom";
-import Category from "../common/Category";
 import axios from "axios";
+import { Link, useParams } from "react-router-dom";
 
-const _url = "http://localhost:5392/vertiv2";
+const _url = "http://localhost:5312/vertiv2/";
 
-const Vertiv = () => {
-  const [vertiv2, setVertiv2] = useState([]);
 
-  useEffect(() => {
-    axios.get(_url).then(({ data }) => {
-      setVertiv2(data);
-    });
-  }, []);
+const VertivSingle = () => {
+    const [category, setCategory] = useState([]);
+    const [vertiv2, setVertiv2] = useState([]);
+    const {id} = useParams()
+    useEffect(() => {
+      axios.get(_url).then(({ data }) => {
+        setCategory(data);
+      });
+    }, []);
 
+    useEffect(() => {
+      axios.get(_url+id).then(({ data }) => {
+        setVertiv2(data);
+      });
+    }, [id]);
   return (
     <div>
       <HeaderBottom
@@ -24,7 +31,25 @@ const Vertiv = () => {
       />
 
       <div className="flex container  my-6  ">
-        <Category />
+      <div >
+      <div className="w-[356px] border-solid border-[#D4DAEA] rounded-lg border-2">
+        <h2 className="text-[24px] rounded-t-lg font-bold p-4 border-solid border-[##D4DAEA] bg-[#435072] text-white ">
+        Kateqoriya
+        </h2>
+        <div  className="flex gap-2 flex-col items-start px-4" >
+          {category.map(({ id,title1 }) => {
+            return (
+              <Link key={id}
+              to={`/vertiv/${id}`}
+                className="text-[#435072] my-2 text-[18px] font-bold"
+              >
+                {title1} <hr />
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </div>
         <div className="mx-10" >
           <h2 className="text-[24px] text-[#435072] font-bold my-2 mx-2">Fasiləsiz Enerji Təchizatı (UPS)</h2>
           <p className=" text-[#606F84]  my-2 mx-2">
@@ -35,7 +60,7 @@ const Vertiv = () => {
             id sagittis vulputate sed posuere.
           </p>
 
-          {vertiv2.map(({title,id,img,description}) => {
+          {category.map(({title,id,img,description}) => {
             return (
               <div className=" bg-[#F4F4F4] rounded-lg border-2 m-2 flex items-center p-4 gap-3" key={id}>
                 <img src={img} alt="" />
@@ -53,7 +78,7 @@ const Vertiv = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Vertiv;
+export default VertivSingle

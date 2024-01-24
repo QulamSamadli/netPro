@@ -5,8 +5,8 @@ import Services from "../../Pages/Services";
 import Blog from "../../Pages/Blog";
 import About from "../../Pages/About";
 import Contact from "../../Pages/Contact";
-import Vertiv from "../Vertiv";
 import ServiceSingle from "../../Pages/ServiceSingle";
+import VertivSingle from "../VertivSingle";
 
 export const routes = [
   { id: 1, path: "/", element: <Home />, title: "Əsas səhifə" },
@@ -20,7 +20,7 @@ export const routes = [
   },
   { id: 5, path: "/blog", element: <Blog />, title: "Qalereya və Bloq" },
   { id: 6, path: "/contact", element: <Contact />, title: "Əlaqə" },
-  { id: 7, path: "/vertiv", element: <Vertiv /> },
+  { id: 7, path: "/vertiv", element: <VertivSingle /> },
   { id: 8, path: "/services/:id", element: <ServiceSingle /> },
   { id: 9, path: "*", element: <Error /> },
 ];
