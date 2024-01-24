@@ -14,13 +14,13 @@ const VertivSingle = () => {
       axios.get(_url).then(({ data }) => {
         setCategory(data);
       });
-    }, []);
+    }, [id]);
 
     useEffect(() => {
       axios.get(_url+id).then(({ data }) => {
         setVertiv2(data);
       });
-    }, [id]);
+    }, []);
   return (
     <div>
       <HeaderBottom

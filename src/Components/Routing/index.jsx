@@ -20,7 +20,7 @@ export const routes = [
   },
   { id: 5, path: "/blog", element: <Blog />, title: "Qalereya və Bloq" },
   { id: 6, path: "/contact", element: <Contact />, title: "Əlaqə" },
-  { id: 7, path: "/vertiv", element: <VertivSingle /> },
+  { id: 7, path: "/vertiv/", element: <VertivSingle /> },
   { id: 8, path: "/services/:id", element: <ServiceSingle /> },
   { id: 9, path: "*", element: <Error /> },
 ];
