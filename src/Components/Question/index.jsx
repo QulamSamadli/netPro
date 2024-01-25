@@ -36,7 +36,7 @@ const Question = ({ grid = false }) => {
               name="fullname"
               value={input.fullname}
               onChange={handleData}
-              className="p-4 border rounded-lg"
+              className="p-8 border rounded-lg"
               type="text"
               placeholder="Adınız və Soyadınız"
             />
@@ -44,7 +44,7 @@ const Question = ({ grid = false }) => {
               name="email"
               value={input.email}
               onChange={handleData}
-              className="p-4 border rounded-lg"
+              className="p-8 border rounded-lg"
               type="email"
               placeholder="Email ünvanı"
             />
@@ -52,7 +52,7 @@ const Question = ({ grid = false }) => {
               name="tel"
               value={input.tel}
               onChange={handleData}
-              className="p-4 border rounded-lg"
+              className="p-8 border rounded-lg"
               type="tel"
               placeholder="Əlaqə nömrəsi"
             />
