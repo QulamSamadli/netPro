@@ -11,26 +11,62 @@ const About = () => {
         title3="Haqqımızda"
       />
 
-      <div className="container ">
-        <div className="flex">
-          <img src="haqqimizda1.png" alt="" />
-          <div className="flex flex-col justify-between">
-            <h2>“NetPro Group MMC” şirkəti haqqında</h2>
-            <p className="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta. Elementum, pharetra, egestas non vulputate eget odio elementum.
+      <div className="container my-6 ">
+        <div className="flex gap-6">
+          <img src="./haqqimizda1.png" alt="" />
+          <div className="flex flex-col justify-around">
+            <h2 className="text-[#435072] text-[40px] font-bold">
+              “NetPro Group MMC” şirkəti haqqında
+            </h2>
+
+            <p className="text-[20px] text-[#606F84]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio elementum.sum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio elementum.
             </p>
-            <p className="my-8"> Mauris felis nisi, consequat non diam egestas ac in diam. Arcu et risus tortor, sollicitudin. Ultrices sed ac lobortis at.</p>
-            <p className="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta. Elementum, pharetra, egestas non vulputate eget odio elementum.</p>
+            <p className="text-[20px] text-[#606F84]">
+              Mauris felis nisi, consequat non diam egestas ac in diam. Arcu et
+              risus tortor, sollicitudin. Ultrices sesum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio elementum.sum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio elementum.d ac lobortis at.
+            </p>
+            <p className="text-[20px] text-[#606F84]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulsum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio elementum.putate eget odio elementum.
+            </p>
           </div>
         </div>
-        <div className="flex">
-     <div >
-     <p className="my-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta. Elementum, pharetra, egestas non vulputate eget odio elementum.
+        <div className="flex my-4">
+          <div className="flex flex-col justify-around text-[20px] text-[#606F84]">
+            <p className="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio
+              elementum.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Eget ullamcorper ipsum mattis sed. Auctor proin in felis, nulla
+              porta. Elementum, pharetra, egestas non vulputate eget odio
+              elementum.
             </p>
-            <p className="my-8"> Mauris felis nisi, consequat non diam egestas ac in diam. Arcu et risus tortor, sollicitudin. Ultrices sed ac lobortis at.</p>
-            <p className="my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta. Elementum, pharetra, egestas non vulputate eget odio elementum.</p>
-     </div>
+            <p className="">
+              Mauris felis nisi, consequat non diam egestas ac in diam. Arcu et
+              risus tortor, sollicitudin. Ultrices sed ac lobortis at.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio elementum.
+            </p>
+            <p className="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+              ullamcorper ipsum mattis sed. Auctor proin in felis, nulla porta.
+              Elementum, pharetra, egestas non vulputate eget odio
+              elementum.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Eget ullamcorper ipsum mattis sed. Auctor proin in felis, nulla
+              porta. Elementum, pharetra, egestas non vulputate eget odio
+              elementum.
+            </p>
+          </div>
 
           <img src="./haqqimizda2.png" alt="" />
         </div>
