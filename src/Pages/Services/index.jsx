@@ -20,7 +20,7 @@ const Services = () => {
         title3="Xidmətlər və Həllər"
       />
 
-      <div className="bg-[#F4F4F4] p-6 container flex flex-col">
+      <div className="bg-[#F4F4F4] p-6 container flex flex-col flex-wrap">
         <h2 className=" text-center  text-[32px] text-[#435072] font-bold ">
           Xidmətlər və Həllərin növləri
         </h2>

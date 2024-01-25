@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="">
       <HeaderBottom title1="Əlaqə" title2="Əsas səhifə" title3="Əlaqə" />
-      <div className="flex justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center">
         <div className="flex flex-col gap-4">
           <div className="border-2 bg-[#FCFCFC] rounded-lg p-8 flex w-[444px] items-center gap-4">
             <div className="border-2  w-[70px] h-[70px] bg-[#435072] flex items-center justify-center rounded-full">
