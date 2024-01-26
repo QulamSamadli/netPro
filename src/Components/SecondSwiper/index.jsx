@@ -18,7 +18,7 @@ const SecondSwiper = () => {
   useEffect(()=>{
 
 axios.get(_url).then(({data})=>{
-console.log(data);
+
 setProducts(data)
 })
 
