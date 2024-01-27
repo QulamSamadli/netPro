@@ -2,34 +2,42 @@ import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const NavbarMob = ({ hamburger = false }) => {
+const NavbarMob = ({ setOpen, hamburger = false }) => {
+  const closeMenu=()=>{
+    setOpen(false)
+  }
   return (
     <nav
-      className={`container text-[#435072;] flex flex-col w-[25%] items-center top-0  absolute left-[75%] z-10 justify-evenly h-[100vh]  bg-[white] text-sm font-bold ${
-        hamburger ? "block" : "hidden"
+      className={`container text-[#435072;] flex flex-col w-[100%] items-center top-0 fixed  left-[0]  z-10 justify-evenly h-[100vh]  bg-[white] text-sm font-bold transition ${
+        hamburger ? "translate-x-0" : "translate-x-[100%]"
       }`}
     >
-      <NavLink className={"group flex items-center "} to="/">
+      <button
+       onClick={closeMenu}
+      >
+        x
+      </button>
+      <NavLink onClick={closeMenu} className={"group flex items-center "} to="/" >
         <FaCaretRight className="group-hover:rotate-90 duration-300" />
         Əsas səhifə
       </NavLink>
-      <NavLink className={"group flex items-center "} to="/about">
+      <NavLink onClick={closeMenu} className={"group flex items-center "} to="/about">
         <FaCaretRight className="group-hover:rotate-90 duration-300" />
         Haqqımızda
       </NavLink>
-      <NavLink className={"group flex items-center "} to="/products">
+      <NavLink onClick={closeMenu} className={"group flex items-center "} to="/products">
         <FaCaretRight className="group-hover:rotate-90 duration-300" />
         Məhsullar
       </NavLink>
-      <NavLink className={"group flex items-center"} to="/services">
+      <NavLink onClick={closeMenu} className={"group flex items-center"} to="/services">
         <FaCaretRight className="group-hover:rotate-90 duration-300" />
         Xidmətlər və Həllər
       </NavLink>
-      <NavLink className={"group flex items-center "} to="/blog">
+      <NavLink onClick={closeMenu} className={"group flex items-center "} to="/blog">
         <FaCaretRight className="group-hover:rotate-90 duration-300" />
         Qalereya və Bloq
       </NavLink>
-      <NavLink className={"group flex items-center "} to="/contact">
+      <NavLink onClick={closeMenu} className={"group flex items-center "} to="/contact">
         <FaCaretRight className="group-hover:rotate-90 duration-300" />
         Əlaqə
       </NavLink>

@@ -71,7 +71,7 @@ const Header = () => {
         >
           ---
         </div>
-        <NavbarMob hamburger={showMobile} />
+        <NavbarMob hamburger={showMobile} setOpen={setShowMobile} />
       </div>
     </div>
   );
