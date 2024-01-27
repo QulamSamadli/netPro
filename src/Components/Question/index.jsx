@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../common/Button";
 import axios from "axios";
 
-const _url = "http://localhost:5381/collabrators";
+const _url = "https://neon-twilight-78fb1a.netlify.app/collabrators";
 
 const Question = ({ grid = false }) => {
   const data = { fullname: "", email: "", tel: "", text: "" };

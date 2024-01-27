@@ -3,7 +3,7 @@ import HeaderBottom from "../../Components/HeaderBottom";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const _url = "http://localhost:5381/solutions";
+const _url = "https://neon-twilight-78fb1a.netlify.app/solutions";
 
 const Services = () => {
   const [solution, setSolution] = useState([]);

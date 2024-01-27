@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import HeaderBottom from '../../Components/HeaderBottom';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-const _url = "http://localhost:5382/vertiv2"
+const _url = "https://neon-twilight-78fb1a.netlify.app/vertiv2"
 
 const Vertiv = () => {
 

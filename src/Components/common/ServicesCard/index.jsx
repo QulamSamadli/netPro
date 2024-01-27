@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // import { cards } from '../ServicesRoute'
 import axios from "axios";
 
-const _link = "http://localhost:5381/services";
+const _link = "https://neon-twilight-78fb1a.netlify.app/services";
 
 const ServicesCard = () => {
   const [service, setService] = useState([]);
@@ -18,7 +18,6 @@ const ServicesCard = () => {
       });
   }, []);
 
- 
   // grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
 
   return (
@@ -40,7 +39,9 @@ const ServicesCard = () => {
                 <div className=" m-2 rounded-full bg-slate-300 w-[55px] h-[55px] flex items-center justify-center">
                   <img src="./cardsImg.png" alt="" />
                 </div>
-                <h2 className="text-xl m-2 font-bold text-[#435072]">{title}</h2>
+                <h2 className="text-xl m-2 font-bold text-[#435072]">
+                  {title}
+                </h2>
                 <p className="text-sm m-2 font-normal text-[#606F84]">
                   {description}
                 </p>

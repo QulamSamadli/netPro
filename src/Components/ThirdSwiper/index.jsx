@@ -10,18 +10,15 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import axios from "axios";
-const _url = "http://localhost:5381/brend"
+const _url = "https://neon-twilight-78fb1a.netlify.app/brend";
 
 const ThirdSwiper = () => {
-const [brend,setBrend]=useState([])
-useEffect(()=>{
-axios.get(_url).then(({data})=>{
-
-  setBrend(data)
-})
-
-},[])
-
+  const [brend, setBrend] = useState([]);
+  useEffect(() => {
+    axios.get(_url).then(({ data }) => {
+      setBrend(data);
+    });
+  }, []);
 
   return (
     <div className="   bg-thirdSwiper  ">
@@ -40,13 +37,16 @@ axios.get(_url).then(({data})=>{
             slideShadows: true,
           }}
           pagination={true}
-          autoplay={{delay:2000}}
-          modules={[EffectCoverflow, Pagination,Autoplay]}
+          autoplay={{ delay: 2000 }}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
           className={` ${style.mySwiper}`}
         >
-          {brend.map(({img,id}) => {
+          {brend.map(({ img, id }) => {
             return (
-              <SwiperSlide key={id} className={`bg-white ${style.mySwiperSlide}`}>
+              <SwiperSlide
+                key={id}
+                className={`bg-white ${style.mySwiperSlide}`}
+              >
                 <img className="p-6" src={img} />
               </SwiperSlide>
             );

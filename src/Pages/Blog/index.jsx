@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import HeaderBottom from '../../Components/HeaderBottom'
 
-const _url = "http://localhost:5722/blog"
+const _url = "https://neon-twilight-78fb1a.netlify.app/blog"
 
 const Blog = () => {
   const [blog,setBlog] = useState([])

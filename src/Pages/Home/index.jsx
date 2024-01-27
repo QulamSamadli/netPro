@@ -11,7 +11,7 @@ import ThirdSwiper from "../../Components/ThirdSwiper";
 import Button from "../../Components/common/Button";
 import ServicesCard from "../../Components/common/ServicesCard";
 import SecondSwiper from "../../Components/SecondSwiper";
-const _url = "http://localhost:5381/swiper1";
+const _url = "https://neon-twilight-78fb1a.netlify.app/swiper1";
 
 const Home = () => {
   const [swiper, setSwiper] = useState([]);
