@@ -44,7 +44,7 @@ const Home = () => {
          }
         </Swiper>
       
-      <div className="container flex flex-col items-center bg-homeAbout justify-evenly  bg-cover bg-center  h-[600px] text-[white]">
+      <div className="container flex flex-col items-center bg-homeAbout justify-evenly gap-6 bg-cover bg-center p-4 text-[white]">
         <img src="./logoWhite.png" alt="" />
         <h3 className="text-[40px] font-bold">
           “NetPro Group” şirkəti haqqında
