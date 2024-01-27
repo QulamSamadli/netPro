@@ -1,29 +1,24 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import style from "./SecondSwiper.module.css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import style from "./SecondSwiper.module.css";
 
 // import required modules
-import { EffectCoverflow, Autoplay } from "swiper/modules";
 import axios from "axios";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
 
-const _url = "http://localhost:5381/products"
+const _url = "http://localhost:5381/products";
 
 const SecondSwiper = () => {
+  const [products, setProducts] = useState([]);
 
-  const [products,setProducts] = useState([])
-
-  useEffect(()=>{
-
-axios.get(_url).then(({data})=>{
-
-setProducts(data)
-})
-
-  },[])
-
+  useEffect(() => {
+    axios.get(_url).then(({ data }) => {
+      setProducts(data);
+    });
+  }, []);
 
   return (
     <div className=" bg-swiperBg2">
