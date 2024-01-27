@@ -8,13 +8,13 @@ import { CiInstagram } from "react-icons/ci";
 
 const HeaderTop = () => {
   return (
-    <div className="bg-headertop">
-      <div className="container flex justify-between items-center h-[64px] text-[white]">
+    <div className="bg-headertop ">
+      <div className="container   justify-between items-center h-[64px] text-[white]  hidden md:flex">
         <p className="flex items-center">
           <CiLocationOn /> Fəzail Bayramov küç., 1156, Xətai ray., Bakı,
           Azərbaycan, AZ1025
         </p>
-        <div className="flex gap-3 ">
+        <div className="flex gap-3  ">
           <div className="flex w-fit items-center">
             <FaWhatsapp /> +99450 5754080
           </div>
