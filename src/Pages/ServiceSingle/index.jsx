@@ -31,8 +31,8 @@ const ServiceSingle = () => {
         title3="Xidmətlər və Həllər"
         title4="-->Avadanlıqların quraşdırılması"
       />
-      <div className="container  grid grid-flow-col ">
-        <div className="w-[356px] h-[380px]  border-solid border-[#D4DAEA] rounded-lg border-2  my-4">
+      <div className="container  grid grid-cols-1 md:grid-cols-2 ">
+        <div className="h-[380px]  border-solid border-[#D4DAEA] rounded-lg border-2  my-4">
           <h2 className="text-[24px] rounded-t-lg font-bold p-4 border-solid border-[##D4DAEA] bg-[#435072] text-white ">
             Xidmətlər və Həllər
           </h2>
@@ -65,7 +65,7 @@ const ServiceSingle = () => {
               tortor pharetra est dolor. Enim ipsum hac pulvinar dolor. Congue
               ut viverra id sagittis vulputate sed posuere.
             </p>
-            <div className="w-[841px] h-[407px]">
+            <div className=" h-[407px]">
               <img className="h-[100%] w-[100%]" src={service.img} alt="" />
             </div>
             <p className=" my-6 text-[#606F84]">
@@ -107,9 +107,9 @@ const ServiceSingle = () => {
               adipiscing elit. Vestibulum semper risus nibh quam id tortor
               tellus.
             </p>
-            <div className="flex gap-4">
-              <img src="../services2-2.png" alt="" />
-              <img src="../services2-3.png" alt="" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <img src="../services2-2.png" className="w-full" alt="" />
+              <img src="../services2-3.png" className="w-full" alt="" />
             </div>
           </div>
         </div>
