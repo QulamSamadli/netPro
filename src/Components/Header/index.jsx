@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaCaretRight } from "react-icons/fa";
 import NavbarMob from "../../NavbarMob";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const [showMobile, setShowMobile] = useState(false);
@@ -69,7 +70,7 @@ const Header = () => {
           className="burger py-4 block md:hidden"
           onClick={() => setShowMobile((pre) => !pre)}
         >
-          ---
+          <GiHamburgerMenu />
         </div>
         <NavbarMob hamburger={showMobile} setOpen={setShowMobile} />
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
 
 const NavbarMob = ({ setOpen, hamburger = false }) => {
   const closeMenu=()=>{
@@ -15,7 +16,7 @@ const NavbarMob = ({ setOpen, hamburger = false }) => {
       <button
        onClick={closeMenu}
       >
-        x
+       <RxCross2 />
       </button>
       <NavLink onClick={closeMenu} className={"group flex items-center "} to="/" >
         <FaCaretRight className="group-hover:rotate-90 duration-300" />
