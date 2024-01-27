@@ -68,7 +68,7 @@ const Home = () => {
       <ServicesCard />
       <ThirdSwiper />
       <FourSwiper />
-      <Question />
+      <Question  />
     </>
   );
 };

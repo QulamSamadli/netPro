@@ -15,21 +15,21 @@ const Question = ({ grid = false }) => {
     axios.post(_url, input).then((res) => {
       console.log(res);
       setInput({ ...data });
-      alert("Ugurla sonlandir")
+      alert("Ugurla sonlandir");
     });
   };
 
   return (
-    <div className={`${grid ? "" : "bg-questionBg"}`}>
+    <div className={`${grid ? "" : "bg-questionBg"}  `}>
       <div className="container flex  flex-col items-center gap-3 p-4">
         <h2 className="text-4xl text-[#435072] font-bold">Suallarınız var?</h2>
-        <p className="text-xl font-normal text-[#435072] ">
+        <p className="text-xl text-center font-normal text-[#435072] ">
           Formu doldurun. Yaxın zamanda sizinlə əlaqə saxlayacayıq.
         </p>
         <div
           className={`gap-3 grid grid-rows-1 ${
-            grid ? "grid-cols-1 w-[450px] " : "grid-cols-2"
-          }`}
+            grid ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"
+          } `}
         >
           <div className="grid gap-2">
             <input
@@ -64,7 +64,7 @@ const Question = ({ grid = false }) => {
               onChange={handleData}
               className="border rounded-lg p-4"
               placeholder="Mesajınız"
-              cols={`${grid ? "56" :"30"}`}
+              cols={`${grid ? "40" : "30"}`}
               rows="10"
             ></textarea>
           </div>
