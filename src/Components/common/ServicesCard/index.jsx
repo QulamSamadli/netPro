@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // import { cards } from '../ServicesRoute'
 import axios from "axios";
 
-const _link = "https://neon-twilight-78fb1a.netlify.app/services";
+const _link = "https://netpro-db.vercel.app/services";
 
 const ServicesCard = () => {
   const [service, setService] = useState([]);
@@ -23,7 +23,9 @@ const ServicesCard = () => {
   return (
     <div className="bg-servicesBg py-10">
       <div className="container flex flex-col gap-4 ">
-        <h2 className="text-4xl py-6 font-bold text-[#435072]">Xidmətlər</h2>
+        <h2 className="text-4xl text-center py-6 font-bold text-[#435072]">
+          Xidmətlər
+        </h2>
         <div
           className=" grid gap-4"
           style={{

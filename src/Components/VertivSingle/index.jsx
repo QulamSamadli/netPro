@@ -3,7 +3,7 @@ import HeaderBottom from "../HeaderBottom";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 
-const _url = "https://neon-twilight-78fb1a.netlify.app/vertiv2/";
+const _url = "https://netpro-db.vercel.app/vertiv2/";
 
 const VertivSingle = () => {
   const [category, setCategory] = useState([]);

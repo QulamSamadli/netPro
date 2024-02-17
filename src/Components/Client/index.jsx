@@ -12,7 +12,7 @@ import style from "./ClientSwiper.module.css";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import axios from "axios";
 
-const _url = "https://neon-twilight-78fb1a.netlify.app/client";
+const _url = "https://netpro-db.vercel.app/client";
 
 const Client = () => {
   const [img, setImg] = useState([]);
@@ -70,13 +70,4 @@ const Client = () => {
 
 export default Client;
 
-//   <div className="items-center  grid grid-rows-1 grid-flow-col my-6 gap-x-6">
-//   <img src="./vertivPartnyor.png" alt="" />
-//   <img src="./glossePartnyor.png" alt="" />
-//   <img src="./dealomPartnyor.png" alt="" />
-//   <img src="./deltaPartnyor.png" alt="" />
-//   <img src="./autoPartnyor.png" alt="" />
-//   <img src="./dealomPartnyor.png" alt="" />
-//   <img src="./deltaPartnyor.png" alt="" />
-//   <img src="./guardanPartnyor.png" alt="" />
-// </div>
+

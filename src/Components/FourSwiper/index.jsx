@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import axios from "axios";
-const _url = "https://neon-twilight-78fb1a.netlify.app/dalery";
+const _url = "https://netpro-db.vercel.app/dalery";
 
 const FourSwiper = () => {
   const [galery, setGalery] = useState([]);

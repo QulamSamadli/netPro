@@ -6,7 +6,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 import HeaderBottom from "../../Components/HeaderBottom";
 
 const ServiceSingle = () => {
-  const url = "https://neon-twilight-78fb1a.netlify.app/solutions/";
+  const url = "https://netpro-db.vercel.app/solutions/";
   const [service, setService] = useState([]);
   const [services, setServices] = useState([]);
   const { id } = useParams();

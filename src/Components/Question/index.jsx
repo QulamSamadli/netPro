@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../common/Button";
 import axios from "axios";
 
-const _url = "https://neon-twilight-78fb1a.netlify.app/collabrators";
+const _url = "https://netpro-db.vercel.app/collabrators";
 
 const Question = ({ grid = false }) => {
   const data = { fullname: "", email: "", tel: "", text: "" };
@@ -75,7 +75,7 @@ const Question = ({ grid = false }) => {
         >
           Gonder
         </button>
-        {/* <Button  title="Gonder" to="/contact" darkMode /> */}
+       
       </div>
     </div>
   );

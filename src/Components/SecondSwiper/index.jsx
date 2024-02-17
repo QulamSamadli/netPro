@@ -9,7 +9,7 @@ import style from "./SecondSwiper.module.css";
 import axios from "axios";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 
-const _url = "https://neon-twilight-78fb1a.netlify.app/products";
+const _url = "https://netpro-db.vercel.app/products";
 
 const SecondSwiper = () => {
   const [products, setProducts] = useState([]);
